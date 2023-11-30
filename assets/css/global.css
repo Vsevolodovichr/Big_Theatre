@@ -11,11 +11,14 @@
   font-family: Open Sans;
 }
 
-.body {
-    overflow-x: hidden;
-    color: var(--white, #FFF);
-    background: var(--black, #333);
-  }
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: var(--white, #FFF);
+  background: var(--black, #333);
+  
+}
 
   .button {
     display: inline-block;
@@ -26,7 +29,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-white);
+    color: var(--white, #FFF);
     background: var(--gold, #D1A954);
     border: none;
     cursor: pointer;
@@ -38,6 +41,7 @@
   .button:hover {
     background-color: var(--color-gold-active);
   }
+
   .button_place_contacts {
     margin: 0 auto;
     height: 50px;
