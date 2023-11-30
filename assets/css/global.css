@@ -1,9 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #fff;
+  --background-color: #333;
+  font-family: Open Sans;
+}
+
 .body {
-    box-sizing: border-box;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
+    overflow-x: hidden;
     color: var(--white, #FFF);
-    background-color: var(--color-gray);
+    background: var(--black, #333);
   }
 
   .button {
@@ -16,7 +27,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--color-white);
-    background: var(--gold, #D1A954);;
+    background: var(--gold, #D1A954);
     border: none;
     cursor: pointer;
     text-align: center;
