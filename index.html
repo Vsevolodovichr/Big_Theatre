@@ -2,103 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="path/to/bootstrap.min.css">
     <link rel="stylesheet" href="path/to/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <title>Theatre Website</title>
 </head>
 <body>
-    <div class="fixed-panel">
-        <div class="contact-info">
-            <h3>Контактна інформація</h3>                   
-        </div>
-        <div class="social-icons">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-        </div>
-    </div>
-    <header class="bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="first-screen" class="bg-light">
-        <div class="container">
-            
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="top-line">
-                        <div class="main-menu">
-                            <a href="#">Головна</a>
-                            <a href="#">Про театр</a>
-                            <a href="#">Наші постановки</a>
-                            <a href="#">Партнери театру</a>
-                            <a href="#">Контакти</a>
-                        </div>
-                        <div class="phone-number">
-                            <span>+38 (095) 650-71-79</span>
-                        </div>
-                    <div class="first-screen_text">
-                        <!-- First-screen text content -->
-                    </div>
-                    
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="swiper-container first-screen-slider">
-                        
-                        <div class="swiper-wrapper">
-                            <!-- Slides go here -->
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <!-- Add more slides as needed -->
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                        <!-- Add Navigation -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="bg-white">
-        <div class="container">
-            <!-- About section content -->
-        </div>
-    </section>
-
-    <section id="projects" class="bg-light">
-        <div class="container">
-            <!-- Projects section content -->
-        </div>
-    </section>
-
-    <section id="rating-partners" class="bg-white">
-        <div class="container">
-            <!-- Rating partners section content -->
-        </div>
-    </section>
-
-    <section id="contacts" class="bg-light">
-        <div class="container">
-            <!-- Contacts section content -->
-        </div>
-    </section>
-
-    <!-- Підключення файлів Bootstrap та Swiper -->
-    <script src="path/to/bootstrap.bundle.min.js"></script>
-    <script src="path/to/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <header data-include="partials/header.partial.html"></header>
 </body>
+<script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </html>

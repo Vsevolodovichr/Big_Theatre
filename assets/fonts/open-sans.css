@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./OpenSans-Regular.woff'),
+       url('./OpenSans-Regular.woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./OpenSans-SemiBold.woff'),
+       url('./OpenSans-SemiBold.woff2');
+  font-style: normal;
+  font-weight: 600;
+}
