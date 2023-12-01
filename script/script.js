@@ -21,15 +21,14 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   slidesPerView: 1,
-  effect: 'coverflow'
+  effect: 'coverflow',
   // Navigation arrows
   navigation: {
     nextEl: '.slider__btn_next',
     prevEl: '.slider__btn_prev',
   },
-
 });
- 
-  sliderPartners();
+
+sliderPartners();
 
   window.addEventListener('resize', sliderPartners);

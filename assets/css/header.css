@@ -202,7 +202,8 @@ line-height: 150%;
 
   .headline {
     position: relative;
-    padding: 33px 33px 0 33px;
+    max-width: 1110px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -256,7 +257,7 @@ line-height: 150%;
 
   .header__link {
     display: block;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 33px;
     letter-spacing: .05em;
     color: var(--white, #FFF);
@@ -270,7 +271,7 @@ line-height: 150%;
     padding-bottom: 4px;
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: .05em;
+    letter-spacing: 1.8px;
     color: var(--color, #FFF);
     text-decoration: none;
     border-bottom: solid 2px var(--color, #D1A954);
