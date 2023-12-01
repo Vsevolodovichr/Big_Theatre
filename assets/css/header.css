@@ -47,7 +47,8 @@
     }
   }
 
-  .fixed-panel__close {
+
+  .fixedpanel__close {
     position: absolute;
     top: 38px;
     right: 38px;
@@ -55,6 +56,51 @@
     height: 32px;
     cursor: pointer;
     z-index: 3;
+  }
+  
+  .fixedpanel__close-icon {
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    width: 16px;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .fixedpanel__close-icon {
+      display: none;
+    }
+  }
+  
+  .fixedpanel__social-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  .fixedpanel__social-item {
+    margin: 0;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .fixedpanel__social-item {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  
+  .fixedpanel__social-icon {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    color: var(--color-white);
+    transition: color 0.3s ease;
+  }
+  
+  .fixed__social-icon:hover {
+    color: var(--color-gold);
   }
 
   .sidepanel__divider {
@@ -246,7 +292,19 @@ line-height: 150%;
     }
   }
 
+  .headline__hamburger {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 2;
+  }
   
+  @media screen and (min-width: 992px) {
+    .headline__hamburger {
+      display: none;
+    }
+  }
 
   .headline__hamburger-icon {
     display: block;
@@ -404,14 +462,14 @@ line-height: 150%;
     height: calc(100% + 10px);
   }
 
-  .slider__btns {
+  .swiper__btns {
     margin: 0;
     padding-top: 55px;
     display: flex;
     justify-content: space-between;
   }
 
-  .slider__btn {
+  .swiper__btn {
     margin: 0;
     padding: 0;
     width: 108px;
@@ -421,27 +479,27 @@ line-height: 150%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     border: none;
-    color: var(--color-white);
+    color: var(--color, #fff);
     background-color: inherit;
     cursor: pointer;
     transition: color 0.5s ease-in-out, font-size 0.05s ease;
   }
   
-  .slider__btn:active {
+  .swiper__btn:active {
     font-size: 17px;
   }
   
-  .slider__btn:first-child {
+  .swiper__btn:first-child {
     padding-left: 65px;
-    background-image: url('../../../images/btn-prev.svg');
+    background-image: url(../images/btn-prev.svg);
     background-repeat: no-repeat;
     background-position: center left;
     background-size: 40px;
   }
   
-  .slider__btn:last-child {
+  .swiper__btn:last-child {
     padding-right: 65px;
-    background-image: url('../../../images/btn-next.svg');
+    background-image: url(../images/btn-next.svg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: 40px;

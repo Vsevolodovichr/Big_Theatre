@@ -1,34 +1,15 @@
-'use strict'
 
-// mobile menu
-  const hamburger = document.querySelector('.headline__hamburger'),
-        sidepanel = document.querySelector('.fixed-panel'),
-        closeSidepanel = document.querySelector('.fixed-panel__close');
+// Get the swiper container element
+const swiperContainer = document.querySelector('.swiper-container');
 
-  function openMenu() {
-    sidepanel.classList.add('fixed-panel_active');
-  }
-
-  function closeMenu() {
-    sidepanel.classList.remove('fixed-panel_active');
-  }
-
-  hamburger.addEventListener('click', openMenu);
-  closeSidepanel.addEventListener('click', closeMenu);
-
-// swiper
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+// Initialize the swiper
+const swiper = new Swiper(swiperContainer, {
+  // Set the direction of the swiper
   direction: 'horizontal',
-  slidesPerView: 1,
-  effect: 'coverflow',
-  // Navigation arrows
+  
+  // Set the navigation buttons
   navigation: {
-    nextEl: '.slider__btn_next',
-    prevEl: '.slider__btn_prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
-
-sliderPartners();
-
-  window.addEventListener('resize', sliderPartners);
