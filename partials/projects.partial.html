@@ -1,11 +1,43 @@
 <section class="projects">
- 
+  <h2 class="section-title"><span class="section-title__span-accent">наші</span> постановки</h2>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="../assets/images/first.png" alt="" class="project__img"> 1</div>
-      <div class="swiper-slide"><img src="../assets/images/lusk_trav.png" class="project__img">Slide 2</div>
-      <div class="swiper-slide"><img src="../assets/images/popel_lyp.png" class="project__img">Slide 3</div>
-      <div class="swiper-slide"><img src="../assets/images/snig_serp.png" class="project__img">Slide 4</div>
+      <div class="swiper-slide">
+        <h3 class="project__title">лускунчик</h3>
+         <h4 class="project__date">травень 2023</h4>
+         <img src="../assets/images/lusk_trav.png" class="project__img">
+        
+      </div>
+      <div class="swiper-slide">
+       
+              <img src="../assets/images/first.png" alt="" class="project__img"> 
+      </div>
+      <div class="swiper-slide">
+        <h3 class="project__title">попелюшка</h3>
+              <h4 class="project__date">липень 2023</h4>
+        <img src="../assets/images/popel_lyp.png" class="project__img">
+      </div>
+      <div class="swiper-slide">
+        <h3 class="project__title">снігова кроролева</h3>
+        <h4 class="project__date">серпень 2023</h4>
+        <img src="../assets/images/snig_serp.png" class="project__img">
+      </div>
     </div>
+  
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new swiper('.swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+});
+  </script>
   </section>
