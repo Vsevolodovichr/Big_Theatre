@@ -1,15 +1,17 @@
+document.querySelector('.second-button').addEventListener('click', function () {
 
-// Get the swiper container element
-const swiperContainer = document.querySelector('.swiper-container');
+  document.querySelector('.animated-icon2').classList.toggle('open');
+  });
 
-// Initialize the swiper
-const swiper = new Swiper(swiperContainer, {
-  // Set the direction of the swiper
-  direction: 'horizontal',
-  
-  // Set the navigation buttons
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      slidesPerView: 4,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  });
